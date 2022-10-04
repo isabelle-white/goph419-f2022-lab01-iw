@@ -37,8 +37,7 @@ def launch_angle(ve_v0, alpha):
     from arcsin import arcsin
     
     y = arcsin(sin_launch_angle)
-    
-    
+        
     return y
 
 a = launch_angle(ve_v0, alpha)
