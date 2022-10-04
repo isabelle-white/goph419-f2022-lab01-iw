@@ -33,7 +33,12 @@ tol_alpha = 0.02
 
 
 def launch_angle_range(alpha, ve_v0, tol_alpha):
-    
+
+    #import the function tests to check the launch angle range each variables are changed
+    from tests_lab01 import tests
+    y = tests(ve_v0, alpha)
+    print(y)   
+
     #create an empty array for the minimum and maximum launch angles
     launch_range = []
     
