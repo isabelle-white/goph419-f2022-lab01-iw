@@ -4,7 +4,7 @@ def main():
 	"""
 	Created on Wed Sep 21 17:45:48 2022
 
-	This script contains code to plot graphs of launch angle against multiple different input values of alpha 
+	This script contains code to calculate the launch angle range and then plot graphs of launch angle against multiple different input values of alpha 
 using the function launch_angle_range 
 
 Inputs
@@ -54,11 +54,11 @@ Graph of Minimum and Maximum launch angle against alpha
 	print('Maximum angles: ', maximum_angle_alpha)
 
 #plot the values of launch angle against alpha. Adding labels and legend. 
-	axis[0].plot(alpha_range, minimum_angle_alpha, label='Min Angle')
-	axis[0].plot(alpha_range, maximum_angle_alpha, label='Max Angle')
+	axis[0].plot(alpha_range, minimum_angle_alpha, label='Minimum Launch Angle')
+	axis[0].plot(alpha_range, maximum_angle_alpha, label='Maximum Launch Angle')
 	axis[0].set_xlabel("Alpha")
 	axis[0].set_ylabel("Launch Angle")
-	axis[0].set_title("Minimum and Maximum launch angle against alpha")
+	axis[0].set_title("Minimum and Maximum Launch Angle against Alpha")
 	axis[0].legend()
 
 #keeping alpha and tol_alpha constant
@@ -81,8 +81,8 @@ Graph of Minimum and Maximum launch angle against alpha
 	print('Maximum angles: ', maximum_angle_ve_v0)
 
 #plot the values of the launch angles against ve_v0 values. Adding labels and legend. 
-	axis[1].plot(ve_v0_range, minimum_angle_ve_v0, label='Min Angle')
-	axis[1].plot(ve_v0_range, maximum_angle_ve_v0, label='Max Angle')
+	axis[1].plot(ve_v0_range, minimum_angle_ve_v0, label='Minimum Launch Angle')
+	axis[1].plot(ve_v0_range, maximum_angle_ve_v0, label='Maximum Launch Angle')
 	axis[1].set_xlabel("Ve/Vo")
 	axis[1].set_ylabel("Launch Angle")
 	axis[1].set_title("Minimum and Maximum Launch Angle against Ve/V0")
