@@ -57,4 +57,5 @@ def launch_angle_range(alpha, ve_v0, tol_alpha):
     return launch_range
 
 angle_range = launch_angle_range(0.25, 2, 0.02)
+print(f"Hand calculated launch angle range = 0.57409-0.61186 and launch_angle_range ={angle_range}.")
 print ("Range of acceptable launch angles = ", angle_range)
