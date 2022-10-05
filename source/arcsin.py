@@ -25,13 +25,11 @@ The value of the arcsin function
 
 @author: izzywhite
 """
-
+#import modules needed
+import numpy as np 
 
 def arcsin(x):
-    
-    #import modules needed
-    import numpy as np
-    
+
     #define input parameters
     Ea = 1
     Es = 0.5*(10**-5)
