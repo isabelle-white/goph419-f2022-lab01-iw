@@ -23,10 +23,10 @@ Output
 @author: izzywhite
 """
 
+#import the relevant modules
+import numpy as np
+
 #defining parameters:
-
-Import numpy as np
-
 alpha = 0.25
 ve_v0 = 2
 
