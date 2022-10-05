@@ -25,17 +25,20 @@ Output
 
 #defining parameters:
 
+Import numpy as np
+
 alpha = 0.25
 ve_v0 = 2
 
 def launch_angle(ve_v0, alpha):
     
-    import numpy as np
-    
+    #write out Equation 17 
     sin_launch_angle = (1+alpha)*np.sqrt(1 - (alpha/(1+alpha))*(ve_v0)**2)
     
+    #import arcsin function so the launch angle can be found 
     from arcsin import arcsin
     
+    #use the function to find the launch angle
     y = arcsin(sin_launch_angle)
         
     return y
